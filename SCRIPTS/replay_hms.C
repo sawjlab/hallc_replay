@@ -46,10 +46,10 @@ void replay_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
   THaApparatus* HMS = new THcHallCSpectrometer("H", "HMS");
   gHaApps->Add(HMS);
 
-  HMS->AddDetector(new THcDC("dc", "Drift Chambers"));
+  //  HMS->AddDetector(new THcDC("dc", "Drift Chambers"));
 
   // Additional detectors:
-  //HMS->AddDetector(new THcHodoscope("hod", "Hodoscope"));
+  HMS->AddDetector(new THcHodoscope("hod", "Hodoscope"));
   //HMS->AddDetector(new THcShower("cal", "Shower"));
   //
   //THcCherenkov* cherenkov = new THcCherenkov("cher", "Gas Cerenkov");
@@ -96,8 +96,8 @@ void replay_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
  analyzer->SetEvent(event);
  analyzer->SetCrateMapFileName("MAPS/db_cratemap.dat");
  analyzer->SetOutFile(ROOTFileName.Data());
- analyzer->SetOdefFile("DEF-files/hdcana.def");
- analyzer->SetCutFile("DEF-files/hdcana_cuts.def");    // optional
+ analyzer->SetOdefFile("DEF-files/hhodana.def");
+ analyzer->SetCutFile("DEF-files/hhodana_cuts.def");    // optional
  // File to record cuts accounting information
  //analyzer->SetSummaryFile("summary_example.log");    // optional
 
