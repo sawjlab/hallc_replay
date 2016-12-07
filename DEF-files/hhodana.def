@@ -3,3 +3,22 @@
 #block H.dc.*
 block H.*
 
+# TDC hits per paddle
+TH1F hpostdc1 'HMS s1x+ TDC hits' H.hod.1x.postdcpad 16 0.5 16.5
+TH1F hnegtdc1 'HMS s1x- TDC hits' H.hod.1x.negtdcpad 16 0.5 16.5
+TH1F hpostdc2 'HMS s1y+ TDC hits' H.hod.1y.postdcpad 10 0.5 10.5
+TH1F hnegtdc2 'HMS s1y- TDC hits' H.hod.1y.negtdcpad 10 0.5 10.5
+TH1F hpostdc3 'HMS s2x+ TDC hits' H.hod.2x.postdcpad 16 0.5 16.5
+TH1F hnegtdc3 'HMS s2x- TDC hits' H.hod.2x.negtdcpad 16 0.5 16.5
+TH1F hpostdc4 'HMS s2y+ TDC hits' H.hod.2y.postdcpad 10 0.5 10.5
+TH1F hnegtdc4 'HMS s2y- TDC hits' H.hod.2y.negtdcpad 10 0.5 10.5
+
+# ADC hits per paddle
+TH1F hposadc1 'HMS s1x+ ADC hits' H.hod.1x.posadcpad 16 0.5 16.5
+TH1F hnegadc1 'HMS s1x- ADC hits' H.hod.1x.negadcpad 16 0.5 16.5
+TH1F hposadc2 'HMS s1y+ ADC hits' H.hod.1y.posadcpad 10 0.5 10.5
+TH1F hnegadc2 'HMS s1y- ADC hits' H.hod.1y.negadcpad 10 0.5 10.5
+TH1F hposadc3 'HMS s2x+ ADC hits' H.hod.2x.posadcpad 16 0.5 16.5
+TH1F hnegadc3 'HMS s2x- ADC hits' H.hod.2x.negadcpad 16 0.5 16.5
+TH1F hposadc4 'HMS s2y+ ADC hits' H.hod.2y.posadcpad 10 0.5 10.5
+TH1F hnegadc4 'HMS s2y- ADC hits' H.hod.2y.negadcpad 10 0.5 10.5
