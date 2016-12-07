@@ -13,6 +13,11 @@ hhodo_plane_names = "1x 1y 2x 2y"
 
 hcal_num_layers = 4
 
+# Configure hodoscope code to use FADC: sample integral minus pulse mode dynamic pedestal
+hhodo_adc_mode=3    # kADCSampIntDynPed
+hhodo_pedestal_scale = 86.0/4.0
+hhodo_adc_diag_cut = 450
+
 rraster_num_signals = 4
 htofusinginvadc=0
  hcer_tot_pmts = 2
