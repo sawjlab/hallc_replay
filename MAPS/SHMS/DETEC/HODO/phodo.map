@@ -6,8 +6,8 @@ DETECTOR=23
 ROC=2
 
 SLOT=14
-11, 1000, 0, 1  ! ADC Reference time REFINDEX=1
-REFINDEX=1
+11, 1000, 0, 2  ! ADC Reference time REFINDEX=2
+REFINDEX=2
 SLOT=3
    0,   1,   1,   0  ! p1x01A+
    1,   1,   2,   0  ! p1x02A+
