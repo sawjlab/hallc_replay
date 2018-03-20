@@ -188,6 +188,16 @@ void replay_production_coin_hElec_pProt (Int_t RunNumber = 0, Int_t MaxEvent = 0
   // Add event handler for EPICS events
   THaEpicsEvtHandler* hcepics = new THaEpicsEvtHandler("epics", "HC EPICS event type 180");
   gHaEvtHandlers->Add(hcepics);
+
+  THcTimeSyncEvtHandler* fadcsynccheck = new THcTimeSyncEvtHandler("SYNC","Synchronization test");
+  fadcsynccheck->AddEvtType(1);
+  fadcsynccheck->AddEvtType(2);
+  fadcsynccheck->AddEvtType(3);
+  fadcsynccheck->AddEvtType(4);
+  fadcsynccheck->AddEvtType(5);
+  fadcsynccheck->AddEvtType(6);
+  fadcsynccheck->AddEvtType(7);
+  gHaEvtHandlers->Add(fadcsynccheck);
  
   // Set up the analyzer - we use the standard one,
   // but this could be an experiment-specific one as well.
